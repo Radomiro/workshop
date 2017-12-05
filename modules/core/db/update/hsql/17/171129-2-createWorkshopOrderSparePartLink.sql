@@ -1,0 +1,2 @@
+alter table WORKSHOP_ORDER_SPARE_PART_LINK add constraint FK_ORDSPAPAR_ORDER foreign key (ORDER_ID) references WORKSHOP_ORDER(ID);
+alter table WORKSHOP_ORDER_SPARE_PART_LINK add constraint FK_ORDSPAPAR_SPARE_PART foreign key (SPARE_PART_ID) references WORKSHOP_SPARE_PART(ID);
